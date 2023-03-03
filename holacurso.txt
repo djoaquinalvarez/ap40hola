@@ -2,3 +2,5 @@
 
 
 medificado en remoto
+
+antes del push remoto modifico

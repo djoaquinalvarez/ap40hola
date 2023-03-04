@@ -1,6 +1,6 @@
 
 
 
-medificado en remoto
+modificado en remoto, 2da vez
 
 antes del push remoto modifico

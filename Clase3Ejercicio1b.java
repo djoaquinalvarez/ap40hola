@@ -7,38 +7,62 @@ public class Main {
     public static void main(String[] args) throws Exception {
         
         
-        char letra ;
-        string str ;
-        int numerosin[] = new int[3];
+       
+        int a=56;
+        int b=65;
+        int c=23;
         int numeros[] = new int[3];
         boolean orden;
         
     if (orden = true) { 
      
-       
-                  for (int i=0; i< numeros[].length(); i++ );{
+ 
+                                                             
         
-            if ( numerosin[i] < numerosin[i+1]);{
+            if (a>b)    {
+            if (b>c)    {
+            numeros[0]=a;
+            numeros[1]=b;
+            numeros[2]=c;   }
+           
+            if (c>b) {
+            numeros[0]=a;
+            numeros[1]=c;
+            numeros[2]=b;  }}
+            
+            
+            if (b>a)    {
+            if (a>c)    {
+            numeros[0]=b;
+            numeros[1]=a;
+            numeros[2]=c;   }
+           
+            if (c>a) {
+            numeros[0]=b;
+            numeros[1]=c;
+            numeros[2]=a;  }}
+            
+            
+            if (c>b)    {
+            if (b>a)    {
+            numeros[0]=c;
+            numeros[1]=b;
+            numeros[2]=a;   }
+           
+            if (a>b) {
+            numeros[0]=c;
+            numeros[1]=a;
+            numeros[2]=b;  }}
+            
+           
+            
+          
+            
                 
-                numeros[i] = numeros[i];
-                numeros[i+1] = numeros[i+1];
-            }
-        }            
+         
     }
     
     
-    else {    
-        
-                   for (int i=0; i< numeros[].length(); i++ );{
-        
-            if ( numerosin[i] > numerosin[i+1]);{
-                
-                numeros[i] = numeros[i];
-                numeros[i+1] = numeros[i+1];
-            }
-        }  
-      
-    }
         System.out.println(numeros);
     }
 }

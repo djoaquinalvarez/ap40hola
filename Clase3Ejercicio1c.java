@@ -1,30 +1,29 @@
 
 
-import java.util.*;
-
 public class Main {
     public static void main(String[] args) throws Exception {
         
         
-        char letra ;
-        string str ;
-        int numerosin[] ;
-        int x ;
-        int count =0;
         
+        
+        int numeros[]={57,765,4456} ;
+        int x =100;
+        int count =0;
+        int largo =numeros.length;
 
      
        
-                  for (int i=0; i< numeros[].length(); i++ );{
+                  for (int i=0; i< largo; i++ )
+                  {
         
-            if ( numerosin[i] > numerosin[i+1]);{
+            if ( numeros[i] > x){
                 
-              count++
+              count = count + numeros[i];
             }
         }            
  
     
 
-        System.out.println(numeros);
+        System.out.println(count);
     }
 }

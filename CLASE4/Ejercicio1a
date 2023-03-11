@@ -1,0 +1,107 @@
+import java.util.*;
+
+public class ordenamiento {
+    public static void main(String[] args) {
+        
+        
+        int num[] = new int[] { 1, 37, 16};
+        char orden = a;
+    
+       
+    };
+          
+     //  int resultado[] = new int = numeros[]  
+      
+
+}
+                    
+private static int process( int[]numeros, char orden )
+
+
+{
+    
+
+ if (orden == 'a') { 
+     
+        
+            if (a>b)    {
+            if (b>c)    {
+            numeros[0]=a;
+            numeros[1]=b;
+            numeros[2]=c;   }
+           
+            if (c>b) {
+            numeros[0]=a;
+            numeros[1]=c;
+            numeros[2]=b;  }}
+            
+            
+            if (b>a)    {
+            if (a>c)    {
+            numeros[0]=b;
+            numeros[1]=a;
+            numeros[2]=c;   }
+           
+            if (c>a) {
+            numeros[0]=b;
+            numeros[1]=c;
+            numeros[2]=a;  }}
+            
+            
+            if (c>b)    {
+            if (b>a)    {
+            numeros[0]=c;
+            numeros[1]=b;
+            numeros[2]=a;   }
+           
+            if (a>b) {
+            numeros[0]=c;
+            numeros[1]=a;
+            numeros[2]=b;  }}
+            
+         
+    }
+    
+     if (orden == 'd') { 
+     
+        
+            if (a<b)    {
+            if (b<c)    {
+            numeros[0]=a;
+            numeros[1]=b;
+            numeros[2]=c;   }
+           
+            if (c<b) {
+            numeros[0]=a;
+            numeros[1]=c;
+            numeros[2]=b;  }}
+            
+            
+            if (b<a)    {
+            if (a<c)    {
+            numeros[0]=b;
+            numeros[1]=a;
+            numeros[2]=c;   }
+           
+            if (c<a) {
+            numeros[0]=b;
+            numeros[1]=c;
+            numeros[2]=a;  }}
+            
+            
+            if (c<b)    {
+            if (b<a)    {
+            numeros[0]=c;
+            numeros[1]=b;
+            numeros[2]=a;   }
+           
+            if (a<b) {
+            numeros[0]=c;
+            numeros[1]=a;
+            numeros[2]=b;  }}
+            
+         
+    }
+
+return ;
+};

@@ -1,27 +1,23 @@
 import java.util.*;
 
-public class ordenamiento {
-    public static void main(String[] args) {
-        
-        
-        int num[] = new int[] { 1, 37, 16};
-        char orden = a;
+public class Main {
+  public static void main(String[] args) throws Exception {
+    int[] vector = {1, 37, 16};
+    char orden = 'a';
+    int[] numerosOrdenados = miProceso(vector, orden);
     
-       
-    };
-          
-     //  int resultado[] = new int = numeros[]  
-      
+    for (int i = 0; i < numerosOrdenados.length; i++) {
+      System.out.print(numerosOrdenados[i] + "-");
+    }
+  }
 
-}
-                    
-private static int process( int[]numeros, char orden )
+  private static int[] miProceso(int[] vector, char orden) {
+    int a = vector[0];
+    int b = vector[1];
+    int c = vector[2];
+    int[] numeros = new int[3];
 
-
-{
-    
-
- if (orden == 'a') { 
+    if (orden == 'd') { 
      
         
             if (a>b)    {
@@ -62,7 +58,7 @@ private static int process( int[]numeros, char orden )
          
     }
     
-     if (orden == 'd') { 
+     else if (orden == 'a') { 
      
         
             if (a<b)    {
@@ -71,7 +67,7 @@ private static int process( int[]numeros, char orden )
             numeros[1]=b;
             numeros[2]=c;   }
            
-            if (c<b) {
+            else if (c<b) {
             numeros[0]=a;
             numeros[1]=c;
             numeros[2]=b;  }}
@@ -83,7 +79,7 @@ private static int process( int[]numeros, char orden )
             numeros[1]=a;
             numeros[2]=c;   }
            
-            if (c<a) {
+           else if (c<a) {
             numeros[0]=b;
             numeros[1]=c;
             numeros[2]=a;  }}
@@ -95,13 +91,15 @@ private static int process( int[]numeros, char orden )
             numeros[1]=b;
             numeros[2]=a;   }
            
-            if (a<b) {
+           else if (a<b) {
             numeros[0]=c;
             numeros[1]=a;
             numeros[2]=b;  }}
             
          
     }
+    
 
-return ;
-};
+    return numeros;
+  }
+}

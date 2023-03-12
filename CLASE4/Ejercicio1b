@@ -5,7 +5,7 @@ public class Main {
     Scanner sc= new Scanner(System.in);
     System.out.print("ingrese numero: ");  
     int a = sc.nextInt();             
-      
+     
     Scanner sc2= new Scanner(System.in);
     System.out.print("ingrese numero: ");  
     int b = sc2.nextInt();  
@@ -15,22 +15,25 @@ public class Main {
     int c = sc3.nextInt();  
     
     Scanner sc4= new Scanner(System.in);
-    System.out.print("ingrese orden: ");  
+    System.out.print("ingrese a ó d segun el orden ");  
     char d = sc4.next().charAt(0);  
     sc.close();
+    sc2.close();
+    sc3.close();
+    sc4.close();
       
     int[] vector = new int[3];
     vector[0]=a;
     vector[1]=b;
     vector[2]=c;
-    char orden = 'a';
-    int[] numerosOrdenados = miProceso(vector, orden);
+  
+    
+    int[] numerosOrdenados = miProceso(vector, d);
     
     for (int i = 0; i < numerosOrdenados.length; i++) {
       System.out.print(numerosOrdenados[i] + "-");
     }
   }
-
 
 
   private static int[] miProceso(int[] vector, char orden) {

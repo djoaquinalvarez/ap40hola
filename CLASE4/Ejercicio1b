@@ -83,7 +83,7 @@ public class Main {
          
     }
     
-     else if (orden == 'a') { 
+          if (orden == 'a') { 
      
         
           
@@ -111,14 +111,15 @@ public class Main {
             
             
           
+
             if ((c<b) & (b<a)) {
             numeros[0]=c;
             numeros[1]=b;
             numeros[2]=a;   }
            
            if ((c<b) & (a<b)) {
-            numeros[0]=c;
-            numeros[1]=a;
+            numeros[0]=a;
+            numeros[1]=c;
             numeros[2]=b;  }
             
          

@@ -1,0 +1,143 @@
+import java.util.*;  
+public class Main {
+  public static void main(String[] args) {
+     
+    int[] vector =null;
+     char d = '\0';
+   if ((vector != null) &( d!='\0'))  
+   
+   {  int[] numerosOrdenados = miProceso(vector, d);
+    
+    for (int i = 0; i < numerosOrdenados.length; i++) {
+      System.out.print("->"+numerosOrdenados[i]  );}
+   
+    }else {  
+    Scanner sc= new Scanner(System.in);
+    System.out.print("ingrese numero: ");  
+    int a = sc.nextInt();             
+     
+    Scanner sc2= new Scanner(System.in);
+    System.out.print("ingrese numero: ");  
+    int b = sc2.nextInt();  
+    
+    Scanner sc3= new Scanner(System.in);
+    System.out.print("ingrese numero: ");  
+    int c = sc3.nextInt();  
+    
+    Scanner sc4= new Scanner(System.in);
+    System.out.print("ingrese a ó d segun el orden ");  
+    d = sc4.next().charAt(0);  
+    sc.close();
+    sc2.close();
+    sc3.close();
+    sc4.close();
+      
+    vector = new int[3];
+    vector[0]=a;
+    vector[1]=b;
+    vector[2]=c;
+     
+  
+    
+    int[] numerosOrdenados = miProceso(vector, d);
+    
+    for (int i = 0; i < numerosOrdenados.length; i++) {
+      System.out.print("->"+numerosOrdenados[i]  );
+    }
+    }
+  }
+
+
+  private static int[] miProceso(int[] vector, char orden) {
+    int a = vector[0];
+    int b = vector[1];
+    int c = vector[2];
+    int[] numeros = new int[3];
+
+    if (orden == 'd') { 
+     
+        
+            if (a>b)    {
+            if (b>c)    {
+            numeros[0]=a;
+            numeros[1]=b;
+            numeros[2]=c;   }
+           
+            if (c>b) {
+            numeros[0]=a;
+            numeros[1]=c;
+            numeros[2]=b;  }}
+            
+            
+            if (b>a)    {
+            if (a>c)    {
+            numeros[0]=b;
+            numeros[1]=a;
+            numeros[2]=c;   }
+           
+            if (c>a) {
+            numeros[0]=b;
+            numeros[1]=c;
+            numeros[2]=a;  }}
+            
+            
+            if (c>b)    {
+            if (b>a)    {
+            numeros[0]=c;
+            numeros[1]=b;
+            numeros[2]=a;   }
+           
+            if (a>b) {
+            numeros[0]=c;
+            numeros[1]=a;
+            numeros[2]=b;  }}
+            
+         
+    }
+    
+          if (orden == 'a') { 
+     
+        
+          
+            if ((a<b) & (b<c)) {
+            numeros[0]=a;
+            numeros[1]=b;
+            numeros[2]=c;   }
+           
+             if((a<b) & (c<b)) {
+            numeros[0]=a;
+            numeros[1]=c;
+            numeros[2]=b;  }
+            
+            
+         
+            if ((b<a) & (a<c)) {
+            numeros[0]=b;
+            numeros[1]=a;
+            numeros[2]=c;   }
+           
+           if ((b<a) & (c<a) ){
+            numeros[0]=b;
+            numeros[1]=c;
+            numeros[2]=a;  }
+            
+            
+          
+
+            if ((c<b) & (b<a)) {
+            numeros[0]=c;
+            numeros[1]=b;
+            numeros[2]=a;   }
+           
+           if ((c<b) & (a<b)) {
+            numeros[0]=a;
+            numeros[1]=c;
+            numeros[2]=b;  }
+            
+         
+    }
+    
+
+    return numeros;
+  }
+}

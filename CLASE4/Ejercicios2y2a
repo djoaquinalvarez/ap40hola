@@ -1,4 +1,4 @@
-	import java.util.*;
+import java.util.*;
 	import java.nio.file.Files;
 	import java.nio.file.Path;
 	import java.nio.file.Paths;
@@ -12,31 +12,33 @@ public class Clase4E2y2a {
 	         System.out.print("escriba suma o producto");  
 	         String operacion = sc.next();  
 	      
-	      String archivo = "C:\\Users\\notebook\\Documents\\importar.txt" ;
+	      String archivo = "C:\\Users\\Notebook\\Documentos\\importar.txt" ;
 	  
-	     
+	      long resultadoS = 0;
+	      long resultadoP = 1;
 	      
 	        if (operacion.equals("suma"))
 	            
-	        {long resultado = 0;
+	        {
 	        for (String linea : Files.readAllLines(Paths.get(archivo)))
 	            {
-	            long num = Long.parseLong(linea);
-	            resultado = resultado + num;
+	            long numS = Long.parseLong(linea);
+	            resultadoS = resultadoS + numS;
 	            }
 	            
 	        }   
-	        if (operacion.equals("producto"))
+	        else if (operacion.equals("producto"))
 	         
-	        {long resultado = 1;
+	        {
 	        for (String linea : Files.readAllLines(Paths.get(archivo)))
 	            {
-	            long num = Long.parseLong(linea);
-	            resultado = resultado * num;
+	            long numP = Long.parseLong(linea);
+	            resultadoP = resultadoP * numP;
 	            }
 	                        
 	        }   
-	            
+	        else {}
 	             
 	        }
 	    }
+

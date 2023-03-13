@@ -16,7 +16,7 @@ public class Main {
 
 
     //String codificar ="hola que tal";
-    String codificar  =Files.readAllLines(Paths.get("C:\\Users\\JuanPablo\\unArchivo.txt" )
+    String codificar  = Files.readAllLines(Paths.get("C:\\Users\\JuanPablo\\unArchivo.txt" ));
     
     
 

@@ -16,7 +16,7 @@ public class Main
       long resultado = 0;
       
       
-        if (operacion=="suma")
+        if (operacion.equals("suma"))
         {
         for (String linea : Files.readAllLines(Paths.get(archivo)))
             {
@@ -25,7 +25,7 @@ public class Main
             }
             
         }   
-        if (operacion=="producto")
+        if (operacion.equals("producto"))
         {
         for (String linea : Files.readAllLines(Paths.get(archivo)))
             {
@@ -38,3 +38,4 @@ public class Main
              System.out.println(resultado);
         }
     }
+

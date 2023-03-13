@@ -1,0 +1,40 @@
+import java.util.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+
+
+public class Main 
+    {
+  public static void main(String[] args) 
+        {
+         Scanner sc= new Scanner(System.in);
+         System.out.print("escriba suma o producto");  
+         String operacion = sc.next();  
+      
+      String archivo = "C:\\Users\\franc\\Documents\\importar.txt" ;
+      long resultado = 0;
+      
+      
+        if (operacion=="suma")
+        {
+        for (String linea : Files.readAllLines(Paths.get(archivo)))
+            {
+            long num = Long.parseLong(linea);
+            resultado = resultado + num;
+            }
+            
+        }   
+        if (operacion=="producto")
+        {
+        for (String linea : Files.readAllLines(Paths.get(archivo)))
+            {
+            long num = Long.parseLong(linea);
+            resultado = resultado * num;
+            }
+                        
+        }   
+            
+             System.out.println(resultado);
+        }
+    }

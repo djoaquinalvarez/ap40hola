@@ -5,17 +5,24 @@ public class Main {
  
     Scanner sc = new Scanner(System.in);
     System.out.print("Ingrese 'code' o 'encode': ");
-    String operacion = sc.next();
+    String operacion = sc.next();                                         //leer de archivo
  
     Scanner sc2 = new Scanner(System.in);
-    System.out.print("Ingrese dezplazamiento: ");
+    System.out.print("Ingrese dezplazamiento: ");                    //leer de archivo
     int desplazamiento = sc2.nextInt();
  
  
- String abecedario = "abcdefghijklmnñopqrstuvwxyz";
- String codificar ="hola que tal";  // quitar
- String salida="";                  // quitar
- //int desplazamiento = 1;
+    String abecedario = "abcdefghijklmnñopqrstuvwxyz";            //lo considero como dado
+
+
+    //String codificar ="hola que tal";
+    String codificar  =Files.readAllLines(Paths.get("C:\\Users\\JuanPablo\\unArchivo.txt" )
+    
+    
+
+    //         leer de archivo
+ //String salida="";                                              // quitar
+
  
          if (operacion.equals("code")) {
          
@@ -24,7 +31,7 @@ public class Main {
                  
                     {    
                     
-                    String archivo = "C:\\Users\\franc\\Documents\\importarholatal.txt";
+                    
                         
                     char indice = codificar.charAt(i);
                    
@@ -35,16 +42,19 @@ public class Main {
                          
                             
                     }
-             
-                    System.out.println(salida);
+                    Files.writeString(Paths.get("/home/eze/nuevoArch" ), salida ); 
+                    System.out.println("proceso finalizado");
              }
+             
+             
          if (operacion.equals("encode"))   {    
+             
              for (int i=0; i<codificar.length(); i++)
                  
                  
                     {    
             
-                    String archivo = "C:\\Users\\franc\\Documents\\importarholatal.txt";
+                   
                         
                     char indice = codificar.charAt(i);
                    
@@ -55,8 +65,8 @@ public class Main {
                          
                             
                     }
-             
-                    System.out.println(salida);
+                    Files.writeString(Paths.get("/home/eze/nuevoArch" ), salida.getBytes(StandardCharsets.ISO_8859_1) );
+                    System.out.println("proceso finalizado");
                     
                     }
     }

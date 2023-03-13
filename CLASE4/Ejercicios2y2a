@@ -13,10 +13,11 @@ public class Main
          String operacion = sc.next();  
       
       String archivo = "C:\\Users\\franc\\Documents\\importar.txt" ;
-      long resultado = 0;
+  
       
       
         if (operacion.equals("suma"))
+            long resultado = 0;
         {
         for (String linea : Files.readAllLines(Paths.get(archivo)))
             {
@@ -26,6 +27,7 @@ public class Main
             
         }   
         if (operacion.equals("producto"))
+            long resultado = 0;
         {
         for (String linea : Files.readAllLines(Paths.get(archivo)))
             {

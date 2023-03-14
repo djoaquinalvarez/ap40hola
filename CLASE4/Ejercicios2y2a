@@ -1,44 +1,56 @@
-import java.util.*;
+	import java.util.*;
+
 	import java.nio.file.Files;
 	import java.nio.file.Path;
 	import java.nio.file.Paths;
-public class Clase4E2y2a {
+	import java.util.List;
+	import java.nio.charset.Charset;
+	import java.io.IOException;
+	import java.nio.file.*;
+	import java.lang.Integer;
+	import java.lang.Iterable;
 
 	
+public class Clase4E2y2a {
 
-	  public static void main(String[] args) 
+	  public static void main(String[] args) throws IOException
 	        {
-	         Scanner sc= new Scanner(System.in);
+	         Scanner sc = new Scanner(System.in);
 	         System.out.print("escriba suma o producto");  
 	         String operacion = sc.next();  
-	      
-	      String archivo = "C:\\Users\\Notebook\\Documentos\\importar.txt" ;
-	  
-	      long resultadoS = 0;
-	      long resultadoP = 1;
-	      
+	         sc.close();                                                               
+	         String archivo = "C:\\Users\\Notebook\\documentos\\importar.txt" ;
+	         Charset cs = Charset.forName("UTF-8"); 
+	         long resultadoS = 0;
+	         long resultadoP = 1;
+	     
 	        if (operacion.equals("suma"))
 	            
-	        {
-	        for (String linea : Files.readAllLines(Paths.get(archivo)))
+	        	
+	        
+	        for (String linea : Files.readString(Paths.get(archivo)))
 	            {
-	            long numS = Long.parseLong(linea);
+	            int numS = Integer.parseInt(linea);
 	            resultadoS = resultadoS + numS;
 	            }
 	            
-	        }   
-	        else if (operacion.equals("producto"))
+	           
+	         if (operacion.equals("producto"))
 	         
 	        {
-	        for (String linea : Files.readAllLines(Paths.get(archivo)))
+	        for (String linea1 : Files.readAllLines(Paths.get(archivo)))
 	            {
-	            long numP = Long.parseLong(linea);
+	            int numP = Integer.parseInt(linea1);
 	            resultadoP = resultadoP * numP;
 	            }
 	                        
-	        }   
-	        else {}
+	        } 
+	         
+	         
+	      }
+}
+	       
+	        
 	             
-	        }
-	    }
-
+	        
+	  

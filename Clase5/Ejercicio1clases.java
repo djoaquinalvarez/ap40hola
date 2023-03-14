@@ -11,8 +11,8 @@ public class Main {
 		  private localdate fechacompra;
 		  private double precio;
 		  private String item1;
-                  private String item1;
-                  private String item1;
+          private String item1;
+          private String item1;
 		}
 		
 		
@@ -22,8 +22,15 @@ public class Main {
 		  private double precio;
 		  private int cantidad;
     
+    		
+			public class descuento {
+		  private boolean aplica;
+    
 		}
-		
-		
+		}
+
+
 	}
 }
+
+

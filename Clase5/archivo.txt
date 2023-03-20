@@ -1,2 +1,3 @@
-fideos;3;201
-yerba;2;601
+esponja;3;10
+jabón en polvo;1;40
+chocolates;2;100

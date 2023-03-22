@@ -54,14 +54,18 @@ public class Compra {
 
 
 	
-		public double calcularTotal() {
+	public double calcularTotal() {
 		double total=0;
 		
+		/*
+		Joaquín Alvarez: en el método calcularTotal() podrías agregar alguna validación por si el carrito esta vacío.
+		*/
 		
-			for (int i=0; i<3;i++) {
-	ItemCompra item = items[i];
-	total += item.calcularSubtotal();}
-			return total;
+		for (int i=0; i<3;i++) {
+			ItemCompra item = items[i];
+			total += item.calcularSubtotal();}
+		
+		return total;
 	 
 		
 	}

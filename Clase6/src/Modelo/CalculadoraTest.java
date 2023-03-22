@@ -3,6 +3,7 @@ package Modelo;
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
 import org.junit.jupiter.api.Assertions;
+import org.junit.Assert;
 
 
 public class CalculadoraTest {
@@ -30,7 +31,7 @@ public class CalculadoraTest {
     public void testCalcularDiv() {
         Calculadora calc = new Calculadora(150, 180);
         double resultado = calc.calcularDiv()/3;
-        assertNotEquals(110, resultado, 0.0001);
+        Assertions.assertNotEquals(110, resultado, 0.0001);
     }
 	@Test
     public void testCalcularSuma2() {
@@ -38,7 +39,7 @@ public class CalculadoraTest {
         Calculadora calc = new Calculadora(70, 40);
         
         double resultado = calc.calcularSuma()*25;
-        assertNotEquals(2700, resultado, 0.0001);        
+        Assertions.assertNotEquals(2700, resultado, 0.0001);        
     }
 	
 	
@@ -46,3 +47,4 @@ public class CalculadoraTest {
 	
 	
 	
+}

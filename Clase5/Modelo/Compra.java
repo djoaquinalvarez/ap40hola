@@ -6,7 +6,9 @@ import java.time.LocalDateTime;
 
 public class Compra {
 
-	
+	/*
+	Joaquín Alvarez: Podrías agregar el método addItem() para agregar cada uno de los items a la compra, una vez que ya los tengas instanciados. 
+	*/
 	
 
 
